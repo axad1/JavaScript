@@ -1,4 +1,6 @@
-do{
-    console.log("hey")
-}
-while(true)
+s = "hello"
+
+s = [...s]
+
+console.log(s)
+// console.log(b)
