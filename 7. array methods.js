@@ -25,3 +25,11 @@ cart = [
 
 amount = cart.reduce((total, item)=> item.price+total, 0)
 console.log(`amount = ${amount}`)
+
+//  ---------------
+
+//  sort    (sort as string)
+a = [9,5,1200,400,3]
+a.sort((a,b)=> a-b)
+
+console.log(a)
