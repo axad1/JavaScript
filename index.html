@@ -1,4 +1,26 @@
 <script>
 
-    prompt("Guess")
+//  class
+
+class CreateUser{
+    constructor(Name, age){
+        this.Name = Name
+        this.age = age
+    }
+    about(){
+        console.log(`Hi i am ${this.Name}.`)
+    }
+    is18(){
+        console.log(`i am 18+ : `, this.age >= 18)
+    }
+}
+
+user1 = new CreateUser("asad", 18);
+
+user1.about()
+user1.is18()
+
+console.log(Object.getPrototypeOf(user1))
+
+    
 </script>

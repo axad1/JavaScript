@@ -42,6 +42,9 @@ obj2 = {
 //  spread operator
 obj3 = {...obj1, ...obj1, key69: "value69"}
 
+//  old method using assign
+obj4 = Object.assign({}, obj1)
+
 //  ----------------
 
 //  spread string into object
@@ -87,3 +90,15 @@ function print({name, age}){
 }
 print(person)
 
+//  -----------------
+
+//  optional chaining
+person?.address
+
+//  -----------------
+
+//  method (function inside objects)
+person.about = function(){
+    console.log(`hi i'm ${this.name}`)
+}
+person.about()

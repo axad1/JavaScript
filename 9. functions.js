@@ -41,3 +41,14 @@ fun();
 
 //  ----------------
 
+//  function are objects as well that have many properties
+
+//  name property will give the name of function
+happy.name
+
+//  we can also add our own properties to functions
+happy.myOwnProperty = "very unique value"
+happy.myOwnProperty
+
+//  functions also provide prototype property so we can add our properties
+happy.prototype

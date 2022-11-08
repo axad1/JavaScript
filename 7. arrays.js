@@ -1,5 +1,7 @@
 // Array is reference datatype
 Array.isArray([])
+typeof a;
+a instanceof Array; 
 
 // create array via constructor
 a = Array()
@@ -11,6 +13,9 @@ a.pop()             //  remove from last
 
 a.unshift("one")    //  insert at start
 a.shift()           //  remove from start
+
+// empty an aray
+a.splice(0, a.length)
 
 //  clone array
 a2 = a.slice(0)
@@ -26,3 +31,7 @@ let [var1, var2,  , ...rest] = a;
 
 // length
 console.log(a.length)
+
+// convert to string with or without a separator
+a.join('|')
+a.toString()
