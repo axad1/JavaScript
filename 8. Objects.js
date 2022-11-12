@@ -23,8 +23,13 @@ for(p in person){
     p, ':', person[p]
 }
 
-//  array of keys
+//  array iterator of keys
 Object.keys(person)
+//  array iterator of values
+Object.values(person)
+//  array iterator of [keys and values]
+for([key, value] of Object.entries(ticket))
+    console.log(key,value)
 
 //  ------------------
 

@@ -1,6 +1,10 @@
 a = [2,4,2,3,3,2,5,1]
 
-// best method
+// Amazing logic
+uniqueArray = a.filter((item, index, self) => self.indexOf(item) == index)
+
+
+// best method using Set
 function remove(a){
     a.splice(0, a.length, ...new Set(a))
 }
