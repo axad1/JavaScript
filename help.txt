@@ -1,0 +1,334 @@
+* Create Dates
+new Date()
+new Date(year, month, day, hours, minutes, seconds, milliseconds)
+new Date(milliseconds)
+new Date(date string)
+Date.parse()
+
+* Convert Date
+1. toString()
+2. toUTCString()
+3. toDateString()
+4. toISOString()
+The ISO 8601 syntax (YYYY-MM-DD)
+with time (YYYY-MM-DDTHH:MM:SSZ)
+Date and time is separated with a capital T.
+UTC time is defined with a capital letter Z.
+"MMM DD YYYY"
+"DD MMM YYYY"
+month can be written in full (January), or abbreviated (Jan)
+
+
+* Array Iteration
+1. forEach(myFunction)
+2. map(myFunction)
+myFunction(value,index,array){}
+|| myFunction(value){}
+3. filter(myFunction)
+myFunction(value){return value>18}
+4. reduce(myFunction)
+myFunction(total,value,index,array){
+    return total+value;}
+it can accept an initial value like
+reduce(myFunction,100);
+5. reduceRight(myFunction)
+6. every()
+all array values pass a test return boolean
+7. some()
+same as filter & return boolean
+
+* Search in Array
+1. indexOf(item,optional-Start);
+return index of first occurance
+2. lastIndexOf(item,optional-start);
+return index of last occurance
+3. find(myFunction)
+myFunction(value,index,array){
+    return value>1}
+returns the first found element
+4. findIndex(myFunction)
+returns index of first found element
+5. Array.from("abcdef")
+create array object from anything
+6. keys();
+return iterator like
+key = a.keys();
+    for(k of key){
+    console.log(k);}
+7. entries()
+returns an Array Iterator object
+with key/value pairs like
+b = a.entries();
+for(e of b){
+    console.log(e);}
+8. includes()
+check if an element is present
+returns boolean
+9. 
+
+
+
+
+
+* Array Methods
+1. length()
+2. sort()
+3. toString()
+4. join()
+5. pop()
+returns value that popped out
+6. push()
+return length
+7. shift()
+returns value
+8. unshift()
+returns length
+9. delete array[0]
+leaves undefined holes
+10. concat()
+a.concat(b); it doesn't change array
+returns a new array
+can also take a string value
+like a.concat("hello")
+11. splice()
+add new | remove items & returns deleted items
+a.splice(start,delete, "c", "d");
+12. slice()
+returns new array
+2nd argument optional
+slice(index,count)
+
+* Sorting Array
+1. sort()
+2. reverse()
+sort with compare function
+ascending
+a = [5,4,3];
+a.sort(function(a, b){return a - b});
+descending
+a = [1,2,3];
+a.sort(function(a, b){return b - a});
+random order
+a.sort(function(a, b){return 0.5 - Math.random()});
+3. Math.max.apply(null,array)
+4. Math.min.apply(null,array)
+
+* Sorting Array Objects
+const cars = [
+  {type:"Volvo", year:2016},
+  {type:"Saab", year:2001},
+  {type:"BMW", year:2010}];
+1. compare the numeric property values
+cars.sort(function(a, b){return a.year - b.year});
+2. compare the string property values
+cars.sort(function(a, b){
+  let x = a.type.toLowerCase();
+  let y = b.type.toLowerCase();
+  if (x < y) {return -1;}
+  if (x > y) {return 1;}
+  return 0;
+});
+
+
+
+
+* Arrays
+a = new Array();
+a = [];
+Array.isArray(name);    check
+car instanceof() Array;
+
+
+* Number Properties
+Number.MAX_VALUE
+Number.MIN_VALUE
+Number.POSITIVE_INFINITY
+Number.NEGATIVE_INFINITY
+Number.NaN
+
+*Number Methods
+1. toString()
+(123).toString();
+(100 + 23).toString();
+2.toExponential()
+ returns a string
+3. toFixed(width)
+returns a string with a specified number of decimals
+4. toPrecision(length)
+returns a string with a specified number of length
+5. valueOf()
+returns a number as a number
+
+* Converting Variables to Numbers
+1. Number()
+2. parseInt()
+returns a whole number
+3. parseFloat()
+Spaces are allowed
+Only the first number is returned
+4. 
+
+
+
+*Template Literals
+uses ` back-tick
+* String Interpolation ${}
+* Variable Substitutions
+text = `Welcome ${firstName}`;
+* Expression Substitution
+let total = `Total: ${a+b}`;
+
+
+* Search Methods
+1. indexOf()
+returns first occurrence + CASE SENSITIVE
+2. lastIndexOf()
+returns last occurrence,
+Both methods accept a second parameter
+as the starting position as
+str.indexOf("locate", 15);
+3. startsWith()
+4. endsWith()
+5. search()
+search() method cannot take a second start position argument.
+indexOf() method cannot take powerful search values (regular expressions)
+6. match()
+return array of objects  || null
+text.match(/asad/gi);
+/g = global & i = case insensitive
+7. includes()
+return boolean
+
+
+* JavaScript Search Methods
+1. indexOf()
+2. lastIndexOf()
+3. startsWith(value,start)
+4. endsWith(value,length)
+5. search()
+6. match()
+7. includes(value,start)
+8. 
+
+* Common HTML Events
+onchange
+onclick
+onmouseover
+onmouseout
+onkeydown
+onload
+
+* Converting a String to an Array
+1. split()
+text.split(",")    // Split on commas
+
+
+* Extracting String Characters
+1. charAt(position)
+2. charCodeAt(position)
+returns the unicode of the character
+returns a UTF-16 code (an integer between 0 and 65535)
+3. Property access [ ]
+text[0] like arrays
+
+* Strings Extracting
+1. slice(start, end)
+(end not included)
+2. substring(start, end)
+cannot accept negative indexes.
+3. substr(start, length)
+second parameter specifies the length
+
+* String Methods
+1. replace()
+/i flag (insensitive)
+/g flag (global match)
+2. toUpperCase()
+3. toLowerCase()
+4. concat()
+5. trim()
+removes whitespace from both sides of a string
+6. padStart()
+text.padStart(4,0);
+7. padEnd()
+text.padEnd(4,0);
+8. toString(base_number)
+base 2 to base 36.
+
+
+output
+console.log("")
+windows.alert("")
+windows.print("")
+
+
+
+"use strict"; at the top
+to ensure there no variable without let or var
+
+* ternary operator condition
+condition ? true statement : false statement
+use multiple or nested conditional operator
+
+
+
+* convert to int
+parseInt(str);
+with radix or base
+parseInt(str,2);
+
+
+* random numbers
+Math.random();
+Math.floor();
+between range formula
+Math.floor(Math.random()* (max-min+1))+min;
+
+* object properties
+uses dot . or bracket [] operator
+update property
+add new property
+delete property
+hasOwnProperty      (check)
+var dog = {
+    "dog name" : "Alpha",
+    "dog legs" : 4,
+    "dog drink" : "water"
+};
+
+
+*comparison operator
+strict equality operator ===
+does not do the type conversion
+
+strict inequality operator !==
+
+formal logical operators
+and && or ||
+
+*Functions
+nextInLine() to implement queue
+
+* Array Functions
+push       // atEnd
+pop        // atEnd
+shift     // atStart
+unshift   // atStart
+
+* create variables 
+var
+let
+const
+ 
+
+* data types
+undefined
+null
+boolean
+string
+symbol
+number
+object
+
+*/
+-->
