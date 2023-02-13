@@ -5,6 +5,10 @@ s = "  Asad  "
 // length
 s.length
 
+// compare
+s === s2
+
+
 // trim white spaces
 s.trim()
 
@@ -48,4 +52,12 @@ console.log(typeof(Number("22")))
 
 // array to string
 arr.join()
-a.toString()
+arr.toString()
+
+// string to array
+Array.from(s)
+
+// searching in string
+s.indexOf("hi")
+s.startsWith("hello")
+s.endsWith("world")
