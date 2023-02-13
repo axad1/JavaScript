@@ -1,0 +1,11 @@
+Currying is a process to breakdown the function that takes multiple arguments into multiple functions taking a single argument.
+
+//START:CODE
+const greet = function(message, name) {
+  console.log(message + ' ' + name);
+};
+
+const sayHi = greet.bind(null, 'hi');
+
+sayHi('Joe');
+//END:CODE
