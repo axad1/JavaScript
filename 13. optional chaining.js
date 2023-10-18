@@ -1,6 +1,12 @@
+/*
+	Optional Property Access Operator ?.
+	Optional Array Element Access Operator .?
+	Optional Call Operator .?
+*/
+
 user = {
   firstname: "asad",
-  // address : {house: 1234}
+  // address: { house: 1234 },
 };
 
 console.log(user?.address);
@@ -13,3 +19,10 @@ console.log(user?.address);
 const arr = null;
 
 console.log(arr?.[0]); // .? is valid with array also
+
+// --------------------
+
+// Optional call to function (Important)
+
+const fun = null; // works with null & undefined only
+fun?.();
