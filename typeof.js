@@ -1,12 +1,6 @@
-console.log(typeof 123)
-
-console.log(typeof "asad")
-
-console.log(typeof(false))
-
-console.log(typeof(null))
-
-console.log(typeof(undefined))
-
-a = []
-console.log(Array.isArray(a))
+a = [123, "asad", false, null, undefined].reduce((p, v)=> ({...p, [v]: typeof v}) , {})
+b = [123, "asad", false, null, undefined].map((v)=> ({value: v, type: typeof v}))
+console.table(a)
+console.table(b)
+console.log("isArray? a => ", Array.isArray(a))
+console.log("isArray? b => ", Array.isArray(b))
