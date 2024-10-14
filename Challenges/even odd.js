@@ -1,8 +1,7 @@
-
-function check(n){
-    return n%2==0
+function check(n) {
+  return n % 2 == 0;
 }
 
-a = ['odd','even']
+a = ["odd", "even"];
 
-console.log(a[Number(check(21))])
+console.log(a[Number(check(21))]);
