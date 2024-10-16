@@ -1,3 +1,18 @@
-const str = "hello !@#$%^WORLD?123.";
-const noSpecialCharacters = str.replace(/[\W\d]/gi, "");
-console.log(noSpecialCharacters); // 'hello WORLD'
+function counter() {
+  let count = 0;
+  return {
+    increment: () => count++,
+    decrement: () => count--,
+    getCount: () => count,
+  };
+}
+
+c = counter();
+c.increment();
+c.increment();
+c.increment();
+c.increment();
+c.decrement();
+
+ans = c.getCount();
+console.log(ans);
